@@ -12,4 +12,9 @@ public class FirstController {
     public String sendSuccessMessage(){
         return "you are receiving message from first method of controller..";
     }
+
+    @GetMapping("/ping")
+    public String ping() {
+        return "pong";
+    }
 }
